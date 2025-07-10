@@ -3,7 +3,7 @@
 **A three body problem.**
 
 ![Banner Image](/img/header.jpeg "A header image depicting a stochastic parrot.")
-Will small variations lead to diverse conversational outcomes? | Études d'un [perroquet](https://en.wikipedia.org/wiki/Stochastic_parrot) ara by P. Boel *(Louvre collection)*
+<br>Will small variations lead to diverse conversational outcomes? | Études d'un [perroquet](https://en.wikipedia.org/wiki/Stochastic_parrot) ara by P. Boel *([Louvre](https://collections.louvre.fr/ark:/53355/cl010061519) collection)*
 
 ## Genesis
 
