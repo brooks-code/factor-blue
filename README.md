@@ -172,13 +172,54 @@ $\dfrac{F_{\text{total}}}{m_{\text{self}}}$
 
 - P.-S. The CSV header is written on first creation. Subsequent runs append rows.
 
-## Logging details examples
+## Logging details levels examples
 
 
 <details>
-<summary> Conversation export as CSV example - click to expand</summary>
+<summary> CSV output example - click to expand</summary>
   
-  
+  <table>
+  <tr>
+    <th>Agent</th>
+    <th>Turn</th>
+    <th>Timestamp</th>
+    <th>Utterance</th>
+    <th>TopicInterest</th>
+    <th>Tone</th>
+  </tr>
+  <tr>
+    <td>Alice</td>
+    <td>1</td>
+    <td>2025-06-12T18:15:35.253902</td>
+    <td>I find the scientific findings troubling, but I can't see a way around it.</td>
+    <td>0.001</td>
+    <td>-0.156</td>
+  </tr>
+  <tr>
+    <td>Bob</td>
+    <td>1</td>
+    <td>2025-06-12T18:16:07.739286</td>
+    <td>I find the findings troubling and I'm not convinced they're accurate.</td>
+    <td>0.004</td>
+    <td>-0.009</td>
+  </tr>
+  <tr>
+    <td>Charlie</td>
+    <td>1</td>
+    <td>2025-06-12T18:16:59.114191</td>
+    <td>The current philosophical discussion suggests a tension between empirical truth and existential implications. Charlie’s anger may stem from questioning the validity of existing findings, implying that the subject matter extends beyond surface-level analysis. If this were a deeper existential truth, it challenges the boundaries of empirical knowledge, suggesting a broader philosophical truth that remains unresolved.</td>
+    <td>-0.066</td>
+    <td>-0.826</td>
+  </tr>
+  <tr>
+    <td>Alice</td>
+    <td>2</td>
+    <td>2025-06-12T18:17:48.637183</td>
+    <td>The topic of science remains unresolved, with Alice’s findings sparking interest in the broader philosophical dimensions of empirical knowledge. Her cheerful tone suggests a perspective that encourages further exploration of the subject.</td>
+    <td>64.750</td>
+    <td>32.225</td>
+  </tr>
+</table>
   
 </details>
 
@@ -246,46 +287,46 @@ $\dfrac{F_{\text{total}}}{m_{\text{self}}}$
   </tr>
 </table>
 
-<table style="width:100%; border-collapse: collapse;">
+<table>
   <tr>
-    <th style="border: 1px solid black; padding: 8px;">Key</th>
-    <th style="border: 1px solid black; padding: 8px;">Value</th>
+    <th>Key found in RAW conversation</th>
+    <th>Value</th>
   </tr>
   <tr>
-    <td style="border: 1px solid black; padding: 8px;">"done"</td>
-    <td style="border: 1px solid black; padding: 8px;">true — Model finished generating a response.</td>
+    <td>"done"</td>
+    <td>true — Model finished generating a response.</td>
   </tr>
   <tr>
-    <td style="border: 1px solid black; padding: 8px;">"done_reason"</td>
-    <td style="border: 1px solid black; padding: 8px;">"stop" — Generation ended normally (no error).</td>
+    <td>"done_reason"</td>
+    <td>"stop" — Generation ended normally (no error).</td>
   </tr>
   <tr>
-    <td style="border: 1px solid black; padding: 8px;">"context"</td>
-    <td style="border: 1px solid black; padding: 8px;">[...] — An array of numeric token/trace identifiers representing model-internal context and history (not human-readable conversation text).</td>
+    <td>"context"</td>
+    <td>[...] — An array of numeric token/trace identifiers representing model-internal context and history (not human-readable conversation text).</td>
   </tr>
   <tr>
-    <td style="border: 1px solid black; padding: 8px;">"total_duration"</td>
-    <td style="border: 1px solid black; padding: 8px;">71303763995 — Total time spent (in nanoseconds) processing the session.</td>
+    <td>"total_duration"</td>
+    <td>71303763995 — Total time spent (in nanoseconds) processing the session.</td>
   </tr>
   <tr>
-    <td style="border: 1px solid black; padding: 8px;">"load_duration"</td>
-    <td style="border: 1px solid black; padding: 8px;">22961990 — Time spent loading resources (nanoseconds).</td>
+    <td>"load_duration"</td>
+    <td>22961990 — Time spent loading resources (nanoseconds).</td>
   </tr>
   <tr>
-    <td style="border: 1px solid black; padding: 8px;">"prompt_eval_count"</td>
-    <td style="border: 1px solid black; padding: 8px;">460 — Number of prompt evaluation calls.</td>
+    <td>"prompt_eval_count"</td>
+    <td>460 — Number of prompt evaluation calls.</td>
   </tr>
   <tr>
-    <td style="border: 1px solid black; padding: 8px;">"prompt_eval_duration"</td>
-    <td style="border: 1px solid black; padding: 8px;">37894459462 — Cumulative time spent evaluating prompts (nanoseconds).</td>
+    <td>"prompt_eval_duration"</td>
+    <td>37894459462 — Cumulative time spent evaluating prompts (nanoseconds).</td>
   </tr>
   <tr>
-    <td style="border: 1px solid black; padding: 8px;">"eval_count"</td>
-    <td style="border: 1px solid black; padding: 8px;">226 — Number of model evaluations performed.</td>
+    <td>"eval_count"</td>
+    <td>226 — Number of model evaluations performed.</td>
   </tr>
   <tr>
-    <td style="border: 1px solid black; padding: 8px;">"eval_duration"</td>
-    <td style="border: 1px solid black; padding: 8px;">33385623883 — Cumulative time spent in model evaluations (nanoseconds).</td>
+    <td>"eval_duration"</td>
+    <td>33385623883 — Cumulative time spent in model evaluations (nanoseconds).</td>
   </tr>
 </table
   
