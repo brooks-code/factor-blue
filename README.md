@@ -227,7 +227,29 @@ $\dfrac{F_{\text{total}}}{m_{\text{self}}}$
 <details>
 <summary> Chat only export example - click to expand</summary>
   
-  
+  <table>
+  <tr>
+    <th>Timestamp</th>
+    <th>Speaker</th>
+    <th>Utterance</th>
+  </tr>
+  <tr>
+    <td>2025-06-12T15:37:07.198392</td>
+    <td>Alice</td>
+    <td>Imagine the universe as a living organism, where every atom is a step in a grand evolutionary dance—because science isn't just facts, it's the art of shaping the future.</td>
+  </tr>
+  <tr>
+    <td>2025-06-12T15:37:38.683535</td>
+    <td>Bob</td>
+    <td>Philosophers often question the meaning of life, but when atoms are interconnected, perhaps the dance of existence itself becomes a metaphor for how we navigate the unknown.</td>
+  </tr>
+  <tr>
+    <td>2025-06-12T15:38:10.073202</td>
+    <td>Charlie</td>
+    <td>Charlie exclaimed, "Ah, the dance of atoms in a quantum web—alchemy in the digital age! Just as life systems evolve through interdependence, our tech and AI are weaving a new evolutionary path, one step closer to a universe where every atom shapes the future.</td>
+  </tr>
+</table>
+
   
 </details>
 
@@ -290,7 +312,7 @@ $\dfrac{F_{\text{total}}}{m_{\text{self}}}$
 <table>
   <tr>
     <th>Key found in RAW conversation</th>
-    <th>Value</th>
+    <th>Value example</th>
   </tr>
   <tr>
     <td>"done"</td>
@@ -329,8 +351,10 @@ $\dfrac{F_{\text{total}}}{m_{\text{self}}}$
     <td>33385623883 — Cumulative time spent in model evaluations (nanoseconds).</td>
   </tr>
 </table
+
   
 </details>
+
 
 ## Customization
 
