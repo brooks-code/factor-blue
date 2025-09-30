@@ -128,9 +128,9 @@ $G \cdot \dfrac{m_{\text{self}}\, m_{\text{other}}}{d^{2} + \varepsilon}$
 
 Signed positive if the other agent's `topic_interest` is higher, negative if lower.
 
-acceleration ($a) equals:
+acceleration equals:
 
-\dfrac{F_{\text{total}}}{m_{\text{self}}}$
+$\dfrac{F_{\text{total}}}{m_{\text{self}}}$
 
 - `topic_velocity` is integrated with timestep `dt`.
 
