@@ -128,7 +128,7 @@ $G \cdot \dfrac{m_{\text{self}}\, m_{\text{other}}}{d^{2} + \varepsilon}$
 
 Signed positive if the other agent's `topic_interest` is higher, negative if lower.
 
-acceleration equals:
+and Acceleration equals:
 
 $\dfrac{F_{\text{total}}}{m_{\text{self}}}$
 
@@ -171,6 +171,125 @@ $\dfrac{F_{\text{total}}}{m_{\text{self}}}$
 | **conversation_dataset.csv** | Appended rows tracking: Agent, Turn, Timestamp, Utterance, TopicInterest, Tone. | Header written on first creation; subsequent runs append rows if **export_as_dataset** is True |
 
 - P.-S. The CSV header is written on first creation. Subsequent runs append rows.
+
+## Logging details examples
+
+
+<details>
+<summary> Conversation export as CSV example - click to expand</summary>
+  
+  
+  
+</details>
+
+
+<details>
+<summary> Chat only export example - click to expand</summary>
+  
+  
+  
+</details>
+
+
+<details>
+<summary> Full log details - click to expand</summary>
+
+<table>
+  <tr>
+    <th>Timestamp</th>
+    <th>Actor</th>
+    <th>Prompt</th>
+    <th>Raw Response</th>
+    <th>Extracted Utterance</th>
+  </tr>
+  <tr>
+    <td>2025-06-12T15:25:07.538094</td>
+    <td>Alice</td>
+    <td>
+      Below is the conversation so far between Alice, Bob, and Charlie:
+      The conversation is just getting started.
+      Now it is Alice's turn. Alice's internal state:
+       • topic_interest = 0.50 (science)
+       • tone = 0.20 (enthusiastic)
+      Based on the full conversation above and your current state, please produce a single short, creative comment to advance the discussion on science.
+    </td>
+    <td>
+{"model":"qwen3:0.6b","created_at":"2025-06-12T15:25:07.522343628Z",
+"response":"\"Quantum entanglement in everyday life challenges our understanding of reality—science is still alive, and Alice’s enthusiasm for it’s a beacon of wonder!\"",
+"done":true}
+    </td>
+    <td>
+&lt;think&gt; ... (internal reasoning) ... &lt;/think&gt;
+"Quantum entanglement in everyday life challenges our understanding of reality—science is still alive, and Alice’s enthusiasm for it’s a beacon of wonder!"
+    </td>
+  </tr>
+
+  <tr>
+    <td>2025-06-12T15:26:21.857151</td>
+    <td>Bob</td>
+    <td>
+      Below is the conversation so far between Alice, Bob, and Charlie:
+      Now it is Bob's turn. Bob's internal state:
+       • topic_interest = -0.30 (philosophy)
+       • tone = -0.10 (cautious)
+      Based on the full conversation above and your current state, please produce a single short, creative comment to advance the discussion on philosophy.
+    </td>
+    <td>
+{"model":"qwen3:0.6b","created_at":"2025-06-12T15:26:21.846859023Z",
+"response":"\"Philosophy’s exploration of existence is a profound journey, and Bob’s cautious yet thoughtful nature makes him a natural subject of inquiry.\"",
+"done":true}
+    </td>
+    <td>
+&lt;think&gt; ... (internal reasoning) ... &lt;/think&gt;
+"Philosophy’s exploration of existence is a profound journey, and Bob’s cautious yet thoughtful nature makes him a natural subject of inquiry."
+    </td>
+  </tr>
+</table>
+
+<table style="width:100%; border-collapse: collapse;">
+  <tr>
+    <th style="border: 1px solid black; padding: 8px;">Key</th>
+    <th style="border: 1px solid black; padding: 8px;">Value</th>
+  </tr>
+  <tr>
+    <td style="border: 1px solid black; padding: 8px;">"done"</td>
+    <td style="border: 1px solid black; padding: 8px;">true — Model finished generating a response.</td>
+  </tr>
+  <tr>
+    <td style="border: 1px solid black; padding: 8px;">"done_reason"</td>
+    <td style="border: 1px solid black; padding: 8px;">"stop" — Generation ended normally (no error).</td>
+  </tr>
+  <tr>
+    <td style="border: 1px solid black; padding: 8px;">"context"</td>
+    <td style="border: 1px solid black; padding: 8px;">[...] — An array of numeric token/trace identifiers representing model-internal context and history (not human-readable conversation text).</td>
+  </tr>
+  <tr>
+    <td style="border: 1px solid black; padding: 8px;">"total_duration"</td>
+    <td style="border: 1px solid black; padding: 8px;">71303763995 — Total time spent (in nanoseconds) processing the session.</td>
+  </tr>
+  <tr>
+    <td style="border: 1px solid black; padding: 8px;">"load_duration"</td>
+    <td style="border: 1px solid black; padding: 8px;">22961990 — Time spent loading resources (nanoseconds).</td>
+  </tr>
+  <tr>
+    <td style="border: 1px solid black; padding: 8px;">"prompt_eval_count"</td>
+    <td style="border: 1px solid black; padding: 8px;">460 — Number of prompt evaluation calls.</td>
+  </tr>
+  <tr>
+    <td style="border: 1px solid black; padding: 8px;">"prompt_eval_duration"</td>
+    <td style="border: 1px solid black; padding: 8px;">37894459462 — Cumulative time spent evaluating prompts (nanoseconds).</td>
+  </tr>
+  <tr>
+    <td style="border: 1px solid black; padding: 8px;">"eval_count"</td>
+    <td style="border: 1px solid black; padding: 8px;">226 — Number of model evaluations performed.</td>
+  </tr>
+  <tr>
+    <td style="border: 1px solid black; padding: 8px;">"eval_duration"</td>
+    <td style="border: 1px solid black; padding: 8px;">33385623883 — Cumulative time spent in model evaluations (nanoseconds).</td>
+  </tr>
+</table
+  
+</details>
 
 ## Customization
 
