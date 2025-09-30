@@ -122,11 +122,15 @@ The run will:
 
 Each agent has a `mass`, `topic_interest`, `topic_velocity`, and `tone`.
 
-Force from another agent = $G \cdot \dfrac{m_{\text{self}}\, m_{\text{other}}}{d^{2} + \varepsilon}$
+Where Force from another agent equals: 
+
+$G \cdot \dfrac{m_{\text{self}}\, m_{\text{other}}}{d^{2} + \varepsilon}$
 
 Signed positive if the other agent's `topic_interest` is higher, negative if lower.
 
-acceleration $a = \dfrac{F_{\text{total}}}{m_{\text{self}}}$
+acceleration ($a) equals:
+
+\dfrac{F_{\text{total}}}{m_{\text{self}}}$
 
 - `topic_velocity` is integrated with timestep `dt`.
 
