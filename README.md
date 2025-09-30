@@ -22,7 +22,8 @@
 - [Usage](#usage)  
 - [Explanation](#explanation)  
 - [Details](#details)  
-- [Logging & output files](#logging--output-files)   
+- [Logging & output files](#logging--output-files)
+- [Logging details levels examples](#logging-details-levels-example)   
 - [Customization](#customization)  
 - [Limitations](#limitations)  
 - [License](#license)
@@ -174,7 +175,6 @@ $\dfrac{F_{\text{total}}}{m_{\text{self}}}$
 
 ## Logging details levels examples
 
-
 <details>
 <summary> CSV output example - click to expand</summary>
   
@@ -223,7 +223,6 @@ $\dfrac{F_{\text{total}}}{m_{\text{self}}}$
   
 </details>
 
-
 <details>
 <summary> Chat only export example - click to expand</summary>
   
@@ -250,9 +249,7 @@ $\dfrac{F_{\text{total}}}{m_{\text{self}}}$
   </tr>
 </table>
 
-  
 </details>
-
 
 <details>
 <summary> Full log details - click to expand</summary>
@@ -286,7 +283,6 @@ $\dfrac{F_{\text{total}}}{m_{\text{self}}}$
 "Quantum entanglement in everyday life challenges our understanding of reality—science is still alive, and Alice’s enthusiasm for it’s a beacon of wonder!"
     </td>
   </tr>
-
   <tr>
     <td>2025-06-12T15:26:21.857151</td>
     <td>Bob</td>
@@ -311,7 +307,7 @@ $\dfrac{F_{\text{total}}}{m_{\text{self}}}$
 
 <table>
   <tr>
-    <th>Key found in RAW conversation</th>
+    <th>Key found in RAW response</th>
     <th>Value example</th>
   </tr>
   <tr>
@@ -352,9 +348,8 @@ $\dfrac{F_{\text{total}}}{m_{\text{self}}}$
   </tr>
 </table
 
-  
 </details>
-
+</details>
 
 ## Customization
 
